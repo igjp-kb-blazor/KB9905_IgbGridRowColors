@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KB9905_IgbGridRowColors_BlazorServerApp1", "KB9905_IgbGridRowColors_BlazorServerApp1.csproj", "{9165EF33-2F87-46A7-A989-662152D46763}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9165EF33-2F87-46A7-A989-662152D46763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9165EF33-2F87-46A7-A989-662152D46763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9165EF33-2F87-46A7-A989-662152D46763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9165EF33-2F87-46A7-A989-662152D46763}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F3161F6-B442-45EB-98E7-6A937709ADB7}
+	EndGlobalSection
+EndGlobal

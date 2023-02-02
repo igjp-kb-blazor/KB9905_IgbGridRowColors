@@ -1,0 +1,47 @@
+﻿.my_wrapper {
+    margin: 1em;
+}
+
+::deep igc-grid {
+    /* 
+     * ヘッダーの背景 (...-background) とテキスト色 (...-text-color) */
+    --header-background: #333;
+    --header-text-color: #ccc;
+    /* 
+     * 奇数行の背景 (...-background) とテキスト色 (...-text-color) */
+    --row-odd-background: whitesmoke;
+    --row-odd-text-color: #666;
+    /* 
+     * 偶数行の背景 (...-background) とテキスト色 (...-text-color) */
+    --row-even-background: gainsboro;
+    --row-even-text-color: #555;
+    /* 
+     * マウスホバー行の背景 (...-background) とテキスト色 (...-text-color) */
+    --row-hover-background: lightblue;
+    --row-hover-text-color: steelblue;
+    /* 
+     * 選択行の背景 (...-background) とテキスト色 (...-text-color) */
+    --row-selected-background: lightpink;
+    --row-selected-text-color: deeppink;
+    /* 
+     * マウスホバーしている選択行の背景 (...-background) とテキスト色 (...-text-color) */
+    --row-selected-hover-background: hotpink;
+    --row-selected-hover-text-color: lightpink;
+    /* 
+     * 選択セルの背景 (...-background) とテキスト色 (...-text-color) 
+     * (※ backgroud 指定なので、色に限らず、画像やストライプ効果なども指定できる)*/
+    --cell-selected-within-background: repeating-linear-gradient(135deg, deeppink 0, deeppink 6px, hotpink 6px, hotpink 12px);
+    --cell-selected-within-text-color: white;
+}
+
+    ::deep igc-grid igx-checkbox {
+        /* 
+         * IgbGrid 内のチェックボックスの背景色 */
+        --fill-color: deeppink;
+    }
+
+/* 
+ * IgbGrid の行をマウスホバー時の色の変化をアニメーション化 */
+::deep igx-grid-row {
+    transition: background linear 0.2s, color linear 0.2s;
+}

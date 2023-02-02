@@ -1,0 +1,29 @@
+﻿@inject PeopleDataService PeopleDS
+
+@if (People == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="my_wrapper">
+        <IgbGrid Data="People" PrimaryKey="@nameof(Person.ID)" AutoGenerate="false" Height="300px"
+             DisplayDensity="DisplayDensity.Compact"
+             RowSelection="GridSelectionMode.Multiple">
+            <IgbColumn Field="@nameof(Person.ID)" Resizable/>
+            <IgbColumn Field="@nameof(Person.FamilyName)" Resizable/>
+            <IgbColumn Field="@nameof(Person.GivenName)" Resizable/>
+            <IgbColumn Field="@nameof(Person.Prefecture)" Resizable/>
+            <IgbColumn Field="@nameof(Person.City)" Resizable/>
+        </IgbGrid>
+    </div>
+}
+
+@code {
+    private List<Person>? People = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        People = await PeopleDS.GetPeopleAsync();
+    }
+}
